@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/dt_poster"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:contentDescription="TODO" />
+    <TextView
+        android:id="@+id/dt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@id/dt_poster"
+        android:text="@string/movie_title"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/dt_lang_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dt_title"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/dt_poster"
+        android:text="Original Language"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/dt_lang_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dt_lang_header"
+        android:layout_marginStart="26dp"
+        android:layout_toRightOf="@id/dt_poster"
+        android:text="English" />
+    <TextView
+        android:id="@+id/dt_rt_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dt_lang_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/dt_poster"
+        android:text="Runtime"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/dt_rt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dt_rt_header"
+        android:layout_marginStart="26dp"
+        android:layout_toRightOf="@id/dt_poster"
+        android:text="2h 29m" />
+    <TextView
+        android:id="@+id/dt_genre_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dt_rt_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/dt_poster"
+        android:text="Genres"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/dt_genre_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dt_genre_header"
+        android:layout_marginStart="26dp"
+        android:layout_toRightOf="@id/dt_poster"
+        android:text="Adventure, Action" />
+    <TextView
+        android:id="@+id/dt_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dt_poster"
+        android:layout_marginTop="10dp"
+        android:text="Overview"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/dt_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dt_overview"
+        android:text="@string/lorem" />
+
+</RelativeLayout>
